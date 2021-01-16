@@ -1,7 +1,12 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { SectionTitle, Pill } from "../../styles";
-import { ProjectItem, ProjectTitle, SkillContainer } from "./styles";
+import {
+  ProjectItem,
+  ProjectTitle,
+  SkillContainer,
+  LinkContainer,
+} from "./styles";
 
 const Projects = ({ user }) => {
   return (
@@ -14,7 +19,7 @@ const Projects = ({ user }) => {
               <ProjectTitle>{project.name}</ProjectTitle>
               <img
                 src={project.images[0].resolutions.thumbnail.url}
-                alt="Project Image"
+                alt="Project Demo"
               />
               <p>{project.summary}</p>
               <SkillContainer>
@@ -22,9 +27,12 @@ const Projects = ({ user }) => {
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
-              <a href={project.githubUrl} target="_blank">
-                Github Repo
-              </a>
+
+              <LinkContainer>
+                <a href={project.githubUrl} rel="noreferrer" target="_blank">
+                  Github Repo
+                </a>
+              </LinkContainer>
             </ProjectItem>
           ))}
         </ul>

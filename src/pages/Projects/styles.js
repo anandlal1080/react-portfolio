@@ -14,3 +14,7 @@ export const ProjectTitle = styled.h4`
 export const SkillContainer = styled.div`
   margin-top: 1.2rem;
 `;
+
+export const LinkContainer = styled.div`
+  margin-top: 1.2rem;
+`;
