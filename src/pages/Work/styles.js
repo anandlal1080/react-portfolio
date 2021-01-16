@@ -10,10 +10,18 @@ export const WorkItem = styled.li`
 export const WorkTitle = styled.h4`
   font-weight: bold;
   color: ${green30};
+  font-style: italic;
 `;
 
 export const JobTitle = styled.p`
   font-weight: bold;
   display: inline-block;
   color: ${red60};
+  font-style: italic;
+`;
+
+export const Paragraph = styled.p`
+  display: inline-block;
+  font-style: oblique;
+  white-space: pre-wrap;
 `;

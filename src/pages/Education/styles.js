@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { white } from "@carbon/colors";
+import { white, magenta50 } from "@carbon/colors";
 
 export const EducationItem = styled.li`
   margin-top: 1rem;
@@ -9,9 +9,12 @@ export const EducationItem = styled.li`
 
 export const Institution = styled.h4`
   font-weight: bold;
+  color: ${magenta50};
+  font-style: italic;
 `;
 
 export const Degree = styled.p`
   font-weight: bold;
   display: inline-block;
+  font-style: oblique;
 `;
