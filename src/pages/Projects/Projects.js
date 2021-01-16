@@ -22,6 +22,9 @@ const Projects = ({ user }) => {
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
+              <a href={project.githubUrl} target="_blank">
+                Github Repo
+              </a>
             </ProjectItem>
           ))}
         </ul>
