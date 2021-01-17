@@ -28,16 +28,6 @@ const UserHeader = ({ user }) => {
           <p>Coding in {user.basics.region}</p>
           <p>{user.basics.yearsOfExperience} years of Industry experience.</p>
           <p style={{ fontStyle: "oblique" }}>{user.basics.headline}</p>
-          <p>
-            {/* Blog:{" "}
-            <a
-              href={user.basics.blog}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {user.basics.blog}
-            </a> */}
-          </p>
         </div>
       </Header>
       <div>
