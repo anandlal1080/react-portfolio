@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { white, orange40 } from "@carbon/colors";
+import { white, green30 } from "@carbon/colors";
 
 export const ProjectItem = styled.li`
   margin-top: 1rem;
@@ -9,7 +9,7 @@ export const ProjectItem = styled.li`
 
 export const ProjectTitle = styled.h4`
   font-weight: bold;
-  color: ${orange40};
+  color: ${green30};
   font-style: italic;
 `;
 

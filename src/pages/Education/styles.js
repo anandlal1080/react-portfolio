@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { white, magenta50 } from "@carbon/colors";
+import { white, green30 } from "@carbon/colors";
 
 export const EducationItem = styled.li`
   margin-top: 1rem;
@@ -13,7 +13,7 @@ export const EducationItem = styled.li`
 
 export const Institution = styled.h4`
   font-weight: bold;
-  color: ${magenta50};
+  color: ${green30};
   font-style: italic;
 `;
 
