@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { white, green30, red60 } from "@carbon/colors";
+import { white, green30, yellow20 } from "@carbon/colors";
 
 export const WorkItem = styled.li`
   margin-top: 1rem;
@@ -16,7 +16,7 @@ export const WorkTitle = styled.h4`
 export const JobTitle = styled.p`
   font-weight: bold;
   display: inline-block;
-  color: ${red60};
+  color: ${yellow20};
   font-style: italic;
 `;
 
@@ -24,4 +24,7 @@ export const Paragraph = styled.p`
   display: inline-block;
   font-style: oblique;
   white-space: pre-wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding-left: 2px;
 `;

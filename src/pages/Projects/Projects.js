@@ -21,7 +21,17 @@ const Projects = ({ user }) => {
                 src={project.images[0].resolutions.thumbnail.url}
                 alt="Project Demo"
               />
-              <p style={{ fontStyle: "oblique" }}>{project.summary}</p>
+              <p
+                style={{
+                  fontStyle: "oblique",
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  borderRadius: "4px",
+                  paddingLeft: "2px",
+                  width: "fit-content",
+                }}
+              >
+                {project.summary}
+              </p>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
                   <Pill key={j}>{item}</Pill>

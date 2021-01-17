@@ -5,4 +5,7 @@ export const StyledSideNav = styled(SideNav)`
   @media (max-width: 640px) {
     display: none;
   }
+  background-image: url("./phone.jpg");
+  background-size: cover;
+  background-position: top center;
 `;

@@ -19,4 +19,7 @@ export const Paragraph = styled.p`
   display: inline-block;
   font-style: oblique;
   white-space: pre-wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding-left: 2px;
 `;

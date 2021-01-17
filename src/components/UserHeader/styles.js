@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding-left: 2px;
   @media (max-width: 640px) {
     display: ${({ isHome }) => (!isHome ? "none" : "flex")};
     flex-direction: column;
