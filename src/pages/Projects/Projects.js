@@ -43,6 +43,10 @@ const Projects = ({ user }) => {
                 <a href={project.githubUrl} rel="noreferrer" target="_blank">
                   Github Repo
                 </a>
+                <span style={{ display: "inline-block", width: "40px" }}></span>
+                <a href={project.website} rel="noreferrer" target="_blank">
+                  Deployed Website
+                </a>
               </LinkContainer>
             </ProjectItem>
           ))}
