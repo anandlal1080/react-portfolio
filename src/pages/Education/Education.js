@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { SectionTitle, Paragraph } from "../../styles";
-import { EducationItem, Institution, Degree } from "./styles";
+import { EducationItem, Institution, Degree, FadeIn } from "./styles";
 
 const Education = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
+      <FadeIn>
         <SectionTitle>Education</SectionTitle>
         <ul>
           {user.education.map((education, i) => (
@@ -27,7 +27,7 @@ const Education = ({ user }) => {
             </EducationItem>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </Layout>
   );
 };

@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { white, green30, yellow20 } from "@carbon/colors";
+import { fadeIn } from "react-animations";
 
 export const WorkItem = styled.li`
   margin-top: 1rem;
@@ -27,4 +28,8 @@ export const Paragraph = styled.p`
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   padding-left: 2px;
+`;
+
+export const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
 `;

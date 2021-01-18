@@ -1,24 +1,24 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Pill } from "../../styles";
-import { SectionTitle, Paragraph, ProfileLink } from "./styles";
+import { SectionTitle, Paragraph, ProfileLink, FadeIn } from "./styles";
 
 const Me = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
+      <FadeIn>
         <SectionTitle>About Me</SectionTitle>
         <Paragraph>{user.basics.summary}</Paragraph>
-      </div>
-      <div>
+      </FadeIn>
+      <FadeIn>
         <SectionTitle>Skills</SectionTitle>
-        <div>
+        <FadeIn>
           {user.skills.map((skill) => (
             <Pill key={skill.name}>{skill.name}</Pill>
           ))}
-        </div>
-      </div>
-      <div>
+        </FadeIn>
+      </FadeIn>
+      <FadeIn>
         <SectionTitle>Profiles</SectionTitle>
         <ul>
           {user.basics.profiles.map((profile, i) => (
@@ -30,7 +30,7 @@ const Me = ({ user }) => {
             </ProfileLink>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </Layout>
   );
 };

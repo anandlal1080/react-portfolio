@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { green30 } from "@carbon/colors";
+import { fadeIn } from "react-animations";
 
 export const ProfileLink = styled.li`
   margin-right: 0.5rem;
@@ -22,4 +23,8 @@ export const Paragraph = styled.p`
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   padding-left: 2px;
+`;
+
+export const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
 `;

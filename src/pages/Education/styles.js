@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { white, green30 } from "@carbon/colors";
+import { fadeIn } from "react-animations";
 
 export const EducationItem = styled.li`
   margin-top: 1rem;
@@ -21,4 +22,8 @@ export const Degree = styled.p`
   font-weight: bold;
   display: inline-block;
   font-style: oblique;
+`;
+
+export const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
 `;

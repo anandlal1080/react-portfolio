@@ -6,12 +6,13 @@ import {
   ProjectTitle,
   SkillContainer,
   LinkContainer,
+  FadeIn,
 } from "./styles";
 
 const Projects = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
+      <FadeIn>
         <SectionTitle>Projects</SectionTitle>
         <ul>
           {user.projects.map((project, i) => (
@@ -46,7 +47,7 @@ const Projects = ({ user }) => {
             </ProjectItem>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </Layout>
   );
 };

@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { SectionTitle } from "../../styles";
-import { WorkItem, WorkTitle, JobTitle, Paragraph } from "./styles";
+import { WorkItem, WorkTitle, JobTitle, Paragraph, FadeIn } from "./styles";
 
 const Work = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
+      <FadeIn>
         <SectionTitle>Work</SectionTitle>
         <ul>
           {user.work.map((work, i) => (
@@ -23,7 +23,7 @@ const Work = ({ user }) => {
             </WorkItem>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </Layout>
   );
 };
